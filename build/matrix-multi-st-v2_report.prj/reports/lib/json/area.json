@@ -1,0 +1,3305 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [57.0254, 31.0513, 28.0729, 42.1305, 16.7984]
+  , "total":
+  [244462, 479710, 1143, 255, 1042]
+  , "name":"Kernel System"
+  , "max_resources":
+  [854400, 1708800, 2713, 1518, 42720]
+  , "children":
+  [
+    {
+      "name":"Static Partition"
+      , "type":"partition"
+      , "children":
+      [
+        {
+          "name":"Board interface"
+          , "type":"resource"
+          , "data":
+          [179950, 358572, 492, 123, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Platform interface logic."
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global interconnect"
+      , "type":"resource"
+      , "data":
+      [3601, 8981, 61, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Global interconnect for 16 global loads and 4 global stores. Reduce number of global loads and stores to simplify global interconnect."
+        }
+        , {
+          "type":"brief"
+          , "text":"For 16 global loads and 4 global stores."
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Global Memory Interconnect"
+              , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/hnj1476724450050.html"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"System description ROM"
+      , "type":"resource"
+      , "data":
+      [0, 67, 2, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"This read-only memory contains information for the host about the system and about each kernel in the system, including kernel names, arguments, and attributes. The system description ROM ensures that the binary image on the FPGA is compatible with the host program."
+        }
+        , {
+          "type":"brief"
+          , "text":"Contains information for the host."
+        }
+      ]
+    }
+    , {
+      "name":"MMstv2"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [15.272, 9.56824, 6.55957, 21.6734, 8.69565]
+      , "total_kernel_resources":
+      [60911, 112090, 588, 132, 1042]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1338, 2411, 0, 0, 10]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'i' (matrix-multi-st-v2.cpp:71)"
+          , "type":"resource"
+          , "data":
+          [7, 68, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"matrix-multi-st-v2.cpp"
+                , "line":71
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 64 bits and depth 1"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 64 width by 1 depth"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'k' (matrix-multi-st-v2.cpp:78)"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 16]
+          , "debug":
+          [
+            [
+              {
+                "filename":"matrix-multi-st-v2.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 64 bits and depth 28"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":" Depth was increased by a factor of 28 due to a loop initiation interval of 28."
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"3 registers of width 64 bits and depth 29"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":" Depth was increased by a factor of 28 due to a loop initiation interval of 28."
+                }
+              ]
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 64 width by 28 depth,\n3 regs, 64 width by 29 depth"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 's' (matrix-multi-st-v2.cpp:72)"
+          , "type":"resource"
+          , "data":
+          [480, 1020, 0, 0, 16]
+          , "debug":
+          [
+            [
+              {
+                "filename":"matrix-multi-st-v2.cpp"
+                , "line":72
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"4 registers of width 64 bits and depth 28"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":" Depth was increased by a factor of 28 due to a loop initiation interval of 28."
+                }
+              ]
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n4 regs, 64 width by 28 depth"
+            }
+          ]
+        }
+        , {
+          "name":"MMstv2.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [24, 1536, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [24, 1536, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [8, 2, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [8, 2, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"MMstv2.B1"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [0, 2, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [0, 2, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [16, 32, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:71"
+                  , "type":"resource"
+                  , "data":
+                  [16, 32, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":71
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [8, 6, 0, 0, 10]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:71"
+                  , "type":"resource"
+                  , "data":
+                  [7, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":71
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"21-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [7, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"MMstv2.B10"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [144, 599, 5, 0, 14]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [144, 599, 5, 0, 14]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [27, 19, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80"
+                  , "type":"resource"
+                  , "data":
+                  [27, 19, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [16, 12, 0, 0, 9]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80"
+                  , "type":"resource"
+                  , "data":
+                  [1297, 4583, 16, 1, 31]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"'Convert 64-bit Unsigned Integer to Floating-point' Function Call"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [394, 317, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Floating-point Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [504, 2050, 15, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [399, 2216, 1, 0, 31]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80 > \naccessor.hpp:325 > accessor.hpp:1533 > \naccessor.hpp:817"
+                  , "type":"resource"
+                  , "data":
+                  [338, 88, 0, 5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":325
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1533
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":817
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [188, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [150, 88, 0, 5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80 > \naccessor.hpp:332 > accessor.hpp:1540 > \naccessor.hpp:817"
+                  , "type":"resource"
+                  , "data":
+                  [338, 88, 0, 5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":332
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1540
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":817
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [188, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [150, 88, 0, 5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"MMstv2.B2"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [342, 855, 33, 0, 22]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [342, 855, 33, 0, 22]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [21, 6, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80"
+                  , "type":"resource"
+                  , "data":
+                  [21, 6, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [16, 12, 0, 0, 35]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80"
+                  , "type":"resource"
+                  , "data":
+                  [1299, 4583, 16, 1, 31]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"'Convert 64-bit Unsigned Integer to Floating-point' Function Call"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [394, 317, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [2, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Floating-point Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [504, 2050, 15, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [399, 2216, 1, 0, 31]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80 > \naccessor.hpp:325 > accessor.hpp:1533 > \naccessor.hpp:817"
+                  , "type":"resource"
+                  , "data":
+                  [338, 88, 0, 5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":325
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1533
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":817
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [188, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [150, 88, 0, 5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80 > \naccessor.hpp:332 > accessor.hpp:1540 > \naccessor.hpp:817"
+                  , "type":"resource"
+                  , "data":
+                  [338, 88, 0, 5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":332
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1540
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":817
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [188, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [150, 88, 0, 5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"MMstv2.B3"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [2496, 9560, 18, 0, 67]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [2496, 9560, 18, 0, 67]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [449, 861, 0, 0, 20]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [242, 510, 0, 0, 8]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:71"
+                  , "type":"resource"
+                  , "data":
+                  [124, 255, 0, 0, 7]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":71
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:78"
+                  , "type":"resource"
+                  , "data":
+                  [82, 96, 0, 0, 5]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":78
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:79"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":79
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [44, 32, 22, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [220, 92, 0, 5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [156, 92, 0, 5, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:73"
+                  , "type":"resource"
+                  , "data":
+                  [4881, 2016, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":73
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Unsigned Integer Divide"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4881, 2016, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:78"
+                  , "type":"resource"
+                  , "data":
+                  [8, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":78
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"11-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"2-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:79"
+                  , "type":"resource"
+                  , "data":
+                  [2859, 7523, 46, 2, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":79
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"'Convert 64-bit Unsigned Integer to Floating-point' Function Call"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [788, 634, 0, 0, 0]
+                    }
+                    , {
+                      "name":"'Convert Floating-point to 64-bit Unsigned Integer' Function Call"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [350, 374, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Floating-point Multiply-Add"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [1721, 6515, 46, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned LSU.  Use Dynamic Profiler to determine performance impact of this LSU."
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:79 > \naccessor.hpp:332 > accessor.hpp:1540 > \naccessor.hpp:817"
+                  , "type":"resource"
+                  , "data":
+                  [1014, 264, 0, 15, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":79
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":332
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1540
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":817
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":9
+                      , "data":
+                      [564, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [450, 264, 0, 15, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"MMstv2.B4"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [5, 8, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:883"
+                  , "type":"resource"
+                  , "data":
+                  [5, 8, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":883
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"MMstv2.B5"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [2901, 10368, 44, 0, 149]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [2901, 10368, 44, 0, 149]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [1140, 2232, 0, 0, 69]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [854, 1785, 0, 0, 56]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:71"
+                  , "type":"resource"
+                  , "data":
+                  [123, 255, 0, 0, 6]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":71
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:78"
+                  , "type":"resource"
+                  , "data":
+                  [82, 96, 0, 0, 5]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":78
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:79"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":79
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80"
+                  , "type":"resource"
+                  , "data":
+                  [80, 96, 0, 0, 2]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [44, 32, 32, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [220, 92, 0, 5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [156, 92, 0, 5, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:73"
+                  , "type":"resource"
+                  , "data":
+                  [4881, 2016, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":73
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Unsigned Integer Divide"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4881, 2016, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:78"
+                  , "type":"resource"
+                  , "data":
+                  [8, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":78
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"11-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"2-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:79"
+                  , "type":"resource"
+                  , "data":
+                  [2859, 7523, 46, 2, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":79
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"'Convert 64-bit Unsigned Integer to Floating-point' Function Call"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [788, 634, 0, 0, 0]
+                    }
+                    , {
+                      "name":"'Convert Floating-point to 64-bit Unsigned Integer' Function Call"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [350, 374, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Floating-point Multiply-Add"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [1721, 6515, 46, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned LSU.  Use Dynamic Profiler to determine performance impact of this LSU."
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:79 > \naccessor.hpp:332 > accessor.hpp:1540 > \naccessor.hpp:817"
+                  , "type":"resource"
+                  , "data":
+                  [1014, 264, 0, 15, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":79
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":332
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1540
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":817
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":9
+                      , "data":
+                      [564, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [450, 264, 0, 15, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"MMstv2.B6"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [270, 729, 31, 0, 14]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [270, 729, 31, 0, 14]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [27, 19, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80"
+                  , "type":"resource"
+                  , "data":
+                  [27, 19, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [16, 12, 0, 0, 15]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80"
+                  , "type":"resource"
+                  , "data":
+                  [1301, 4583, 16, 1, 31]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"'Convert 64-bit Unsigned Integer to Floating-point' Function Call"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [394, 317, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Floating-point Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [504, 2050, 15, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [402, 2216, 1, 0, 31]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80 > \naccessor.hpp:325 > accessor.hpp:1533 > \naccessor.hpp:817"
+                  , "type":"resource"
+                  , "data":
+                  [338, 88, 0, 5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":325
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1533
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":817
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [188, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [150, 88, 0, 5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80 > \naccessor.hpp:332 > accessor.hpp:1540 > \naccessor.hpp:817"
+                  , "type":"resource"
+                  , "data":
+                  [338, 88, 0, 5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":332
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1540
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":817
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [188, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [150, 88, 0, 5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"MMstv2.B7"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [2876, 10150, 42, 0, 156]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [2876, 10150, 42, 0, 156]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [740, 1419, 0, 0, 68]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [494, 1020, 0, 0, 56]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:71"
+                  , "type":"resource"
+                  , "data":
+                  [123, 255, 0, 0, 6]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":71
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:78"
+                  , "type":"resource"
+                  , "data":
+                  [82, 96, 0, 0, 5]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":78
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:79"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":79
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80"
+                  , "type":"resource"
+                  , "data":
+                  [40, 48, 0, 0, 1]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [44, 32, 31, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [220, 92, 0, 5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [156, 92, 0, 5, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:73"
+                  , "type":"resource"
+                  , "data":
+                  [4869, 2004, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":73
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Unsigned Integer Divide"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4869, 2004, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:78"
+                  , "type":"resource"
+                  , "data":
+                  [8, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":78
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"11-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"2-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:79"
+                  , "type":"resource"
+                  , "data":
+                  [2859, 7523, 46, 2, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":79
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"'Convert 64-bit Unsigned Integer to Floating-point' Function Call"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [788, 634, 0, 0, 0]
+                    }
+                    , {
+                      "name":"'Convert Floating-point to 64-bit Unsigned Integer' Function Call"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [350, 374, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Floating-point Multiply-Add"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [1721, 6515, 46, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned LSU.  Use Dynamic Profiler to determine performance impact of this LSU."
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:79 > \naccessor.hpp:332 > accessor.hpp:1540 > \naccessor.hpp:817"
+                  , "type":"resource"
+                  , "data":
+                  [1014, 264, 0, 15, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":79
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":332
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1540
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":817
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":9
+                      , "data":
+                      [564, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [450, 264, 0, 15, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"MMstv2.B8"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [242, 701, 30, 0, 14]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [242, 701, 30, 0, 14]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [27, 19, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80"
+                  , "type":"resource"
+                  , "data":
+                  [27, 19, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [16, 12, 0, 0, 15]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80"
+                  , "type":"resource"
+                  , "data":
+                  [1300, 4583, 16, 1, 31]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"'Convert 64-bit Unsigned Integer to Floating-point' Function Call"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [394, 317, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Floating-point Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0, 0, 0, 1, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [504, 2050, 15, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [402, 2216, 1, 0, 31]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80 > \naccessor.hpp:325 > accessor.hpp:1533 > \naccessor.hpp:817"
+                  , "type":"resource"
+                  , "data":
+                  [338, 88, 0, 5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":325
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1533
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":817
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [188, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [150, 88, 0, 5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:80 > \naccessor.hpp:332 > accessor.hpp:1540 > \naccessor.hpp:817"
+                  , "type":"resource"
+                  , "data":
+                  [338, 88, 0, 5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":80
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":332
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1540
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":817
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [188, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [150, 88, 0, 5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"MMstv2.B9"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [2747, 9998, 32, 0, 132]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [2747, 9998, 32, 0, 132]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [501, 683, 0, 0, 67]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [366, 508, 0, 0, 56]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:71"
+                  , "type":"resource"
+                  , "data":
+                  [91, 127, 0, 0, 6]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":71
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:78"
+                  , "type":"resource"
+                  , "data":
+                  [43, 48, 0, 0, 5]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":78
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:79"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":79
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [44, 32, 20, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [220, 92, 0, 5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [156, 92, 0, 5, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:73"
+                  , "type":"resource"
+                  , "data":
+                  [4876, 2011, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":73
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Unsigned Integer Divide"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4876, 2011, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:78"
+                  , "type":"resource"
+                  , "data":
+                  [8, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":78
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"11-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"2-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:79"
+                  , "type":"resource"
+                  , "data":
+                  [2859, 7523, 46, 2, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":79
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"'Convert 64-bit Unsigned Integer to Floating-point' Function Call"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [788, 634, 0, 0, 0]
+                    }
+                    , {
+                      "name":"'Convert Floating-point to 64-bit Unsigned Integer' Function Call"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [350, 374, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Floating-point Multiply-Add"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [0, 0, 0, 2, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [1721, 6515, 46, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned LSU.  Use Dynamic Profiler to determine performance impact of this LSU."
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"handler.hpp:882 > matrix-multi-st-v2.cpp:79 > \naccessor.hpp:332 > accessor.hpp:1540 > \naccessor.hpp:817"
+                  , "type":"resource"
+                  , "data":
+                  [1030, 272, 0, 15, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/handler.hpp"
+                        , "line":882
+                      }
+                      , {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                        , "line":79
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":332
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":1540
+                      }
+                      , {
+                        "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                        , "line":817
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":9
+                      , "data":
+                      [568, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [462, 272, 0, 15, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

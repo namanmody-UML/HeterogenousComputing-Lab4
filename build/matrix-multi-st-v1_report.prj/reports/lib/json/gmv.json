@@ -1,0 +1,281 @@
+{
+  "nodes":
+  [
+    {
+      "name":"DDR"
+      , "id":1
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Interleaving":"Yes"
+          , "Interleave Size":"1024 bytes"
+          , "Channels":"2 channels"
+          , "Maximum bandwidth the BSP can deliver":"34133.00 MB/s"
+          , "Realistic maximum bandwidth the BSP can deliver":"30719.70 MB/s"
+          , "Channel MWIDTH (bits)":"512, 512"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":2
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":3
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":4
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":5
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Type":"ring"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect"
+          , "id":6
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Type":"ring"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect Router"
+          , "id":7
+          , "details":
+          [
+            {
+              "type":"table"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Loads"
+      , "id":8
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"LD"
+          , "id":612087552
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"1"
+              , "Latency":"2 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"PREFETCHING"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v1.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":612371328
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"11"
+              , "Latency":"279 cycles"
+              , "KWIDTH":"64 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-NON-ALIGNED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v1.cpp"
+                , "line":73
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":612371696
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"11"
+              , "Latency":"191 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v1.cpp"
+                , "line":73
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":612372064
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"11"
+              , "Latency":"191 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v1.cpp"
+                , "line":73
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":9
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":612404624
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"10"
+              , "Latency":"2 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "Uses Write Ack":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v1.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":1
+      , "to":2
+    }
+    , {
+      "from":2
+      , "to":1
+    }
+    , {
+      "from":5
+      , "to":4
+    }
+    , {
+      "from":6
+      , "to":4
+    }
+    , {
+      "from":4
+      , "to":2
+    }
+    , {
+      "from":2
+      , "to":7
+    }
+    , {
+      "from":612087552
+      , "to":6
+    }
+    , {
+      "from":612404624
+      , "to":5
+    }
+    , {
+      "from":612371328
+      , "to":6
+    }
+    , {
+      "from":612371696
+      , "to":6
+    }
+    , {
+      "from":612372064
+      , "to":6
+    }
+  ]
+}

@@ -1,0 +1,629 @@
+{
+  "nodes":
+  [
+    {
+      "name":"MMstv2"
+      , "id":4024525048
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"Local Memory"
+          , "id":1
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_"
+              , "id":2
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Unknown Name #0"
+              , "id":3
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                          , "line":"68"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                    , "line":68
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"AccessRange (inline#0)"
+              , "id":4
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"879"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":879
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"AccessRange (inline#1)"
+              , "id":5
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"879"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":879
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"AccessRange (inline#2)"
+              , "id":6
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"879"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":879
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"MemRange (inline#0)"
+              , "id":7
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"880"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":880
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"MemRange (inline#1)"
+              , "id":8
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"880"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":880
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"MemRange (inline#2)"
+              , "id":9
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"880"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":880
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"Offset (inline#0)"
+              , "id":10
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"880"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":880
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"Offset (inline#1)"
+              , "id":11
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"880"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":880
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"Offset (inline#2)"
+              , "id":12
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"880"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":880
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"AccessRange"
+              , "id":13
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"879"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":879
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"MemRange"
+              , "id":14
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"880"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":880
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"Offset"
+              , "id":15
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"880"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":880
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"Id (inline#0)"
+              , "id":16
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"807"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":807
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"Id (inline#1)"
+              , "id":17
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"807"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":807
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"Id (inline#2)"
+              , "id":18
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"807"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":807
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"Id"
+              , "id":19
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"807"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":807
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

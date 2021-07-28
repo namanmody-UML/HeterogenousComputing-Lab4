@@ -1,0 +1,190 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Speculated iterations", "Details"]
+  , "children":
+  [
+    {
+      "name":"Kernel: MMpara_v1"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-para-v1.cpp"
+            , "line":72
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"ND-Range"
+        }
+        , {
+          "type":"text"
+          , "text":"ND-Range"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Fully unrolled loop"
+          , "data":
+          ["n/a", "n/a", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"accessor.hpp"
+                , "line":883
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Unrolled by #pragma unroll"
+            }
+            , {
+              "type":"text"
+              , "text":"Unrolled by #pragma unroll"
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+        , {
+          "name":"Fully unrolled loop"
+          , "data":
+          ["n/a", "n/a", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"accessor.hpp"
+                , "line":883
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Unrolled by #pragma unroll"
+            }
+            , {
+              "type":"text"
+              , "text":"Unrolled by #pragma unroll"
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+        , {
+          "name":"Fully unrolled loop"
+          , "data":
+          ["n/a", "n/a", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"accessor.hpp"
+                , "line":883
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Unrolled by #pragma unroll"
+            }
+            , {
+              "type":"text"
+              , "text":"Unrolled by #pragma unroll"
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+        , {
+          "name":"Fully unrolled loop"
+          , "data":
+          ["n/a", "n/a", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"accessor.hpp"
+                , "line":883
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Unrolled by #pragma unroll"
+            }
+            , {
+              "type":"text"
+              , "text":"Unrolled by #pragma unroll"
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+        , {
+          "name":"MMpara_v1.B2"
+          , "data":
+          ["No", "n/a", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-para-v1.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Thread capacity = 258"
+            }
+            , {
+              "type":"text"
+              , "text":"Thread capacity = 258"
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+  ]
+}

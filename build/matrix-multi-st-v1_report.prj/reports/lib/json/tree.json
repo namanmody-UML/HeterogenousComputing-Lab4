@@ -1,0 +1,88 @@
+{
+  "nodes":
+  [
+    {
+      "name":"MMstv1"
+      , "id":611119112
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"MMstv1.B6"
+          , "id":611895488
+          , "type":"bb"
+        }
+        , {
+          "name":"MMstv1.B5"
+          , "id":611895408
+          , "type":"bb"
+        }
+        , {
+          "name":"MMstv1.B2"
+          , "id":611895168
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":616356128
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"MMstv1.B1"
+          , "id":611894016
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":614596224
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"MMstv1.B0"
+          , "id":611893520
+          , "type":"bb"
+        }
+        , {
+          "name":"MMstv1.B3"
+          , "id":611895248
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":616955280
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"2X Partially unrolled MMstv1.B4"
+          , "id":611895328
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 4"
+              , "id":618200544
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 3"
+              , "id":617184544
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

@@ -1,0 +1,1 @@
+/glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/bin/dpcpp    -rdynamic -fintelfpga -Xshardware -Xsboard=intel_a10gx_pac:pac_a10  CMakeFiles/matrix-multi-st-v3.fpga.dir/matrix-multi-st-v3.cpp.o  -o ../matrix-multi-st-v3.fpga 

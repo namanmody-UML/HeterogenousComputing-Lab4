@@ -1,0 +1,954 @@
+{
+  "3323400816":
+  {
+    "nodes":
+    [
+      {
+        "name":"Cluster 1"
+        , "id":3326217056
+        , "start":"202.00"
+        , "end":"208.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Cluster Name":"i_sfc_s_c1_in_crit_edge364_zts9mmpara_v2s_c1_enter_k0_zts9mmpara_v27"
+            , "Cluster Type":"Stall-Free"
+            , "Cluster Start Cycle":"202"
+            , "Cluster Latency":"6"
+          }
+        ]
+        , "type":"cluster"
+        , "children":
+        [
+          {
+            "name":"Logic"
+            , "id":3327174288
+            , "subtype":"entry"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Logic Start Cycle":"202"
+                , "Cluster Logic Latency":"3"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Exit"
+            , "id":3327181584
+            , "subtype":"exit"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Start Cycle":"205"
+                , "Latency":"3"
+                , "Exit FIFO Depth":"32"
+                , "Exit FIFO Width":"64"
+                , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+              }
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"Cluster 0"
+        , "id":3325936256
+        , "start":"0.00"
+        , "end":"10.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Cluster Name":"i_sfc_s_c0_in_crit_edge364_zts9mmpara_v2s_c0_enter_k0_zts9mmpara_v22"
+            , "Cluster Type":"Stall-Free"
+            , "Cluster Start Cycle":"0"
+            , "Cluster Latency":"10"
+          }
+        ]
+        , "type":"cluster"
+        , "children":
+        [
+          {
+            "name":"Logic"
+            , "id":3326711968
+            , "subtype":"entry"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Logic Start Cycle":"0"
+                , "Cluster Logic Latency":"7"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Exit"
+            , "id":3327030432
+            , "subtype":"exit"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Start Cycle":"7"
+                , "Latency":"3"
+                , "Exit FIFO Depth":"32"
+                , "Exit FIFO Width":"192"
+                , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+              }
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"LD"
+        , "id":3327859872
+        , "start":"10.00"
+        , "end":"202.00"
+        , "subtype":"load/store"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Burst-coalesced"
+            , "Stall-free":"No"
+            , "Global Memory":"Yes"
+            , "Start Cycle":"10"
+            , "Latency":"192"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-para-v2.cpp"
+              , "line":80
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"ST"
+        , "id":3330463776
+        , "start":"208.00"
+        , "end":"210.00"
+        , "subtype":"load/store"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Store"
+            , "Width":"32 bits"
+            , "LSU Style":"Burst-coalesced"
+            , "Stall-free":"No"
+            , "Global Memory":"Yes"
+            , "Start Cycle":"208"
+            , "Latency":"2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-para-v2.cpp"
+              , "line":80
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Input"
+        , "id":3333064304
+        , "subtype":"default"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input"
+            , "Preceding Blocks":"MMpara_v2.B2"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":3327174288
+        , "to":3327181584
+      }
+      , {
+        "from":3326711968
+        , "to":3327030432
+      }
+      , {
+        "from":3327859872
+        , "to":3327174288
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":3327030432
+        , "to":3327859872
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"192"
+          }
+        ]
+      }
+      , {
+        "from":3327030432
+        , "to":3330463776
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"192"
+          }
+        ]
+      }
+      , {
+        "from":3327181584
+        , "to":3330463776
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3333064304
+        , "to":3326711968
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3333064304
+        , "to":3327174288
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":3333064304
+        , "to":3326711968
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+    ]
+  }
+  , "3323400896":
+  {
+    "nodes":
+    [
+      {
+        "name":"Cluster 3"
+        , "id":3328010112
+        , "start":"203.00"
+        , "end":"216.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Cluster Name":"i_sfc_s_c1_in_crit_edge_zts9mmpara_v2s_c1_enter35_k0_zts9mmpara_v211"
+            , "Cluster Type":"Stall-Free"
+            , "Cluster Start Cycle":"203"
+            , "Cluster Latency":"13"
+          }
+        ]
+        , "type":"cluster"
+        , "children":
+        [
+          {
+            "name":"Logic"
+            , "id":3328017040
+            , "subtype":"entry"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Logic Start Cycle":"203"
+                , "Cluster Logic Latency":"10"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Exit"
+            , "id":3328071808
+            , "subtype":"exit"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Start Cycle":"213"
+                , "Latency":"3"
+                , "Exit FIFO Depth":"32"
+                , "Exit FIFO Width":"64"
+                , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+              }
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"Cluster 2"
+        , "id":3327376336
+        , "start":"1.00"
+        , "end":"11.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Cluster Name":"i_sfc_s_c0_in_crit_edge_zts9mmpara_v2s_c0_enter259_k0_zts9mmpara_v22"
+            , "Cluster Type":"Stall-Free"
+            , "Cluster Start Cycle":"1"
+            , "Cluster Latency":"10"
+          }
+        ]
+        , "type":"cluster"
+        , "children":
+        [
+          {
+            "name":"Logic"
+            , "id":3327383328
+            , "subtype":"entry"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Logic Start Cycle":"1"
+                , "Cluster Logic Latency":"7"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Exit"
+            , "id":3327664560
+            , "subtype":"exit"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Start Cycle":"8"
+                , "Latency":"3"
+                , "Exit FIFO Depth":"32"
+                , "Exit FIFO Width":"384"
+                , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+              }
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"LD"
+        , "id":3327777744
+        , "start":"11.00"
+        , "end":"203.00"
+        , "subtype":"load/store"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Burst-coalesced cached"
+            , "Stall-free":"No"
+            , "Global Memory":"Yes"
+            , "Start Cycle":"11"
+            , "Latency":"192"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-para-v2.cpp"
+              , "line":78
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":3327827136
+        , "start":"11.00"
+        , "end":"203.00"
+        , "subtype":"load/store"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Burst-coalesced cached"
+            , "Stall-free":"No"
+            , "Global Memory":"Yes"
+            , "Start Cycle":"11"
+            , "Latency":"192"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-para-v2.cpp"
+              , "line":78
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":3327949728
+        , "start":"216.00"
+        , "end":"216.00"
+        , "subtype":"default"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Integer Compare"
+            , "Start Cycle":"216"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-para-v2.cpp"
+              , "line":77
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":3329188976
+        , "start":"11.00"
+        , "end":"203.00"
+        , "subtype":"load/store"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"128 bits"
+            , "LSU Style":"Burst-coalesced non-aligned cached"
+            , "Stall-free":"No"
+            , "Global Memory":"Yes"
+            , "Start Cycle":"11"
+            , "Latency":"192"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-para-v2.cpp"
+              , "line":78
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":3330304576
+        , "start":"1.00"
+        , "end":"216.00"
+        , "subtype":"default"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Integer Add"
+            , "Constant Operand":"4 (0x4)"
+            , "Start Cycle":"1"
+            , "Latency":"215"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-para-v2.cpp"
+              , "line":77
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":3330485120
+        , "start":"11.00"
+        , "end":"203.00"
+        , "subtype":"load/store"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Burst-coalesced cached"
+            , "Stall-free":"No"
+            , "Global Memory":"Yes"
+            , "Start Cycle":"11"
+            , "Latency":"192"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-para-v2.cpp"
+              , "line":78
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":3332248400
+        , "start":"11.00"
+        , "end":"203.00"
+        , "subtype":"load/store"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Burst-coalesced cached"
+            , "Stall-free":"No"
+            , "Global Memory":"Yes"
+            , "Start Cycle":"11"
+            , "Latency":"192"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-para-v2.cpp"
+              , "line":78
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Loop Input"
+        , "id":3343748416
+        , "subtype":"default"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Loop Input"
+            , "Preceding Blocks":"MMpara_v2.B2, MMpara_v2.B0"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":3328017040
+        , "to":3328071808
+      }
+      , {
+        "from":3327383328
+        , "to":3327664560
+      }
+      , {
+        "from":3327777744
+        , "to":3328017040
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":3327664560
+        , "to":3327777744
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"384"
+          }
+        ]
+      }
+      , {
+        "from":3327827136
+        , "to":3328017040
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":3327664560
+        , "to":3327827136
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"384"
+          }
+        ]
+      }
+      , {
+        "from":3329188976
+        , "to":3328017040
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"128"
+          }
+        ]
+      }
+      , {
+        "from":3327664560
+        , "to":3329188976
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"384"
+          }
+        ]
+      }
+      , {
+        "from":3330304576
+        , "to":3327949728
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3330304576
+        , "to":3343748416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3330485120
+        , "to":3328017040
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":3327664560
+        , "to":3330485120
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"384"
+          }
+        ]
+      }
+      , {
+        "from":3332248400
+        , "to":3328017040
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":3327664560
+        , "to":3332248400
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"384"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3327383328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3343748416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3330304576
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3327383328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3327383328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3343748416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3328017040
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":3328071808
+        , "to":3343748416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3327383328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3343748416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3327383328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3343748416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3327383328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":3343748416
+        , "to":3343748416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+    ]
+  }
+  , "3323691760":
+  {
+    "nodes":
+    [
+      {
+        "name":"<arg7>"
+        , "id":3330015488
+        , "start":"1.00"
+        , "end":"1.00"
+        , "subtype":"default"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg7>'"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<arg6>"
+        , "id":3343745584
+        , "start":"1.00"
+        , "end":"1.00"
+        , "subtype":"default"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg6>'"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<arg7>"
+        , "id":3343812928
+        , "start":"1.00"
+        , "end":"1.00"
+        , "subtype":"default"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg7>'"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+/var/spool/torque/mom_priv/jobs/934135.v-qsvr-1.aidevcloud.SC: line 30: cd: /home/u75983/projects/dpcpp-tutorial/matrix-multi: No such file or directory
+CMake Error: The source directory "/home/u75983" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.
+make: *** No rule to make target 'profile'.  Stop.
+/usr/sbin/kill-illegit-procs: line 6: /etc/kill-illegit-procs.cfg: No such file or directory
+/usr/sbin/kill-illegit-procs: line 6: /etc/kill-illegit-procs.cfg: No such file or directory

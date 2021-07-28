@@ -1,0 +1,749 @@
+{
+  "nodes":
+  [
+    {
+      "name":"DDR"
+      , "id":1
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Interleaving":"Yes"
+          , "Interleave Size":"1024 bytes"
+          , "Channels":"2 channels"
+          , "Maximum bandwidth the BSP can deliver":"34133.00 MB/s"
+          , "Realistic maximum bandwidth the BSP can deliver":"30719.70 MB/s"
+          , "Channel MWIDTH (bits)":"512, 512"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":2
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":3
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":4
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Mutually exclusive accesses, no stalls"
+            }
+          ]
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":5
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Type":"ring"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect"
+          , "id":6
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Type":"ring"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect Router"
+          , "id":7
+          , "details":
+          [
+            {
+              "type":"table"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Loads"
+      , "id":8
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"LD"
+          , "id":4025521040
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"10"
+              , "Latency":"198 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":80
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4025915472
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"75"
+              , "Latency":"293 cycles"
+              , "KWIDTH":"64 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-NON-ALIGNED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4025915840
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"75"
+              , "Latency":"198 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4025916208
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"75"
+              , "Latency":"198 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4025859504
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"75"
+              , "Latency":"293 cycles"
+              , "KWIDTH":"64 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-NON-ALIGNED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4025859872
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"75"
+              , "Latency":"198 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4025860240
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"75"
+              , "Latency":"198 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4026018160
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"9"
+              , "Latency":"198 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":80
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4026067664
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"75"
+              , "Latency":"293 cycles"
+              , "KWIDTH":"64 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-NON-ALIGNED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4026068032
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"75"
+              , "Latency":"198 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4026068400
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"75"
+              , "Latency":"198 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4026089376
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"9"
+              , "Latency":"198 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":80
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4026143312
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"75"
+              , "Latency":"293 cycles"
+              , "KWIDTH":"64 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-NON-ALIGNED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4026143680
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"75"
+              , "Latency":"198 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4026144048
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"75"
+              , "Latency":"198 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":4026166096
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"9"
+              , "Latency":"198 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":80
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":9
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":4025880480
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"220"
+              , "Latency":"36 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "Uses Write Ack":"Yes"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":80
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":4026020592
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"219"
+              , "Latency":"36 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "Uses Write Ack":"Yes"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":80
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":4026091808
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"219"
+              , "Latency":"36 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "Uses Write Ack":"Yes"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":80
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":4026168528
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Address Space":"1024"
+              , "Start Cycle":"219"
+              , "Latency":"36 cycles"
+              , "KWIDTH":"32 bits"
+              , "MWIDTH":"512 bits"
+              , "Uses Caching":"No"
+              , "Uses Write Ack":"Yes"
+              , "LSU Attributes":"BURST-COALESCED"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v2.cpp"
+                , "line":80
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":1
+      , "to":2
+    }
+    , {
+      "from":2
+      , "to":1
+    }
+    , {
+      "from":5
+      , "to":4
+    }
+    , {
+      "from":6
+      , "to":4
+    }
+    , {
+      "from":4
+      , "to":2
+    }
+    , {
+      "from":2
+      , "to":7
+    }
+    , {
+      "from":4025521040
+      , "to":6
+    }
+    , {
+      "from":4025880480
+      , "to":5
+    }
+    , {
+      "from":4025915472
+      , "to":6
+    }
+    , {
+      "from":4025915840
+      , "to":6
+    }
+    , {
+      "from":4025916208
+      , "to":6
+    }
+    , {
+      "from":4025859504
+      , "to":6
+    }
+    , {
+      "from":4025859872
+      , "to":6
+    }
+    , {
+      "from":4025860240
+      , "to":6
+    }
+    , {
+      "from":4026018160
+      , "to":6
+    }
+    , {
+      "from":4026020592
+      , "to":5
+    }
+    , {
+      "from":4026067664
+      , "to":6
+    }
+    , {
+      "from":4026068032
+      , "to":6
+    }
+    , {
+      "from":4026068400
+      , "to":6
+    }
+    , {
+      "from":4026089376
+      , "to":6
+    }
+    , {
+      "from":4026091808
+      , "to":5
+    }
+    , {
+      "from":4026143312
+      , "to":6
+    }
+    , {
+      "from":4026143680
+      , "to":6
+    }
+    , {
+      "from":4026144048
+      , "to":6
+    }
+    , {
+      "from":4026166096
+      , "to":6
+    }
+    , {
+      "from":4026168528
+      , "to":5
+    }
+  ]
+}

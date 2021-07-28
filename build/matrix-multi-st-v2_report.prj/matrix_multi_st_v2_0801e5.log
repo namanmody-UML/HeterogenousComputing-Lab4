@@ -1,0 +1,3 @@
+Compiler Command: aoc -o /home/u75983/tmp/matrix-multi-st-v2-0801e5.aocr /home/u75983/tmp/matrix-multi-st-v2-3a480e.spv -sycl -rtl -dep-files=/home/u75983/tmp/matrix-multi-st-v2-6bcdd1.d -output-report-folder=/home/u75983/dpcpp-tutorial/matrix-multi/build/matrix-multi-st-v2_report.prj -g -hardware -board=intel_a10gx_pac:pac_a10
+System name: matrix_multi_st_v2_0801e5
+

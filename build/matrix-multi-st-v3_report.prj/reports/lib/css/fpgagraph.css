@@ -1,0 +1,42 @@
+.node rect, .node circle, .node polygon, .node ellipse, .cluster rect
+{
+  cursor: pointer;
+  fill: #ffffff;
+  stroke: #333333;
+  stroke-width: 1px;
+}
+
+.node text
+{
+  font: 10px sans-serif;
+  pointer-events: none;
+}
+
+.node:active polygon,
+.node:hover polygon, 
+.node:active ellipse,
+.node:hover ellipse {
+  stroke: rgb(142, 204, 224);
+  stroke-width: 3;
+  stroke-opacity: 1;
+}
+
+.edgePath path.path {
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+/* arrows are typically drawn with a polygon */
+.edgePath:active path,
+.edgePath:hover path {
+  stroke: rgb(142, 204, 224);
+  stroke-width: 3;
+  stroke-opacity: 1;
+}
+
+.edgeLabel .label text {
+  font: 10px sans-serif;
+  fill: #f66;
+  pointer-events: none;
+}
+

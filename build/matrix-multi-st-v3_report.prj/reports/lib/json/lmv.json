@@ -1,0 +1,3261 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":2
+      , "name":"MMstv3"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":25
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                , "line":101
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_mem_a"
+              , "Start Cycle":"246"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":26
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                , "line":102
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_mem_b"
+              , "Start Cycle":"246"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":27
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                , "line":103
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_mem_d"
+              , "Start Cycle":"246"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":28
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                , "line":111
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"local_mem_a"
+              , "Start Cycle":"3"
+              , "Latency":"3"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":29
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                , "line":111
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"local_mem_b"
+              , "Start Cycle":"3"
+              , "Latency":"3"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":30
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                , "line":117
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"local_mem_d"
+              , "Start Cycle":"1"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":31
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                , "line":117
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Stores to":"local_mem_d"
+              , "Start Cycle":"9"
+              , "Latency":"1"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":32
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                , "line":124
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined never-stall"
+              , "Stall-free":"Yes"
+              , "Loads from":"local_mem_d"
+              , "Start Cycle":"3"
+              , "Latency":"4"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":42
+          , "name":"Local Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":43
+              , "name":"local_mem_a"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"matrix-multi-st-v3.cpp"
+                    , "line":83
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":44
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":60
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":76
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":45
+                  , "name":"Bank 1"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":61
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":77
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":46
+                  , "name":"Bank 2"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":62
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":78
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":47
+                  , "name":"Bank 3"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":63
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":79
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":48
+                  , "name":"Bank 4"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":64
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":80
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":49
+                  , "name":"Bank 5"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":65
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":81
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":50
+                  , "name":"Bank 6"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":66
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":82
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":51
+                  , "name":"Bank 7"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":67
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":83
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":52
+                  , "name":"Bank 8"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":68
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":84
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":53
+                  , "name":"Bank 9"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":69
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":85
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":54
+                  , "name":"Bank 10"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":70
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":86
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":55
+                  , "name":"Bank 11"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":71
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":87
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":56
+                  , "name":"Bank 12"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":72
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":88
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":57
+                  , "name":"Bank 13"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":73
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":89
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":58
+                  , "name":"Bank 14"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":74
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":90
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":59
+                  , "name":"Bank 15"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":83
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":75
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":91
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"1024 bytes"
+                  , "Implemented size":"1024 bytes"
+                  , "Number of banks":"16"
+                  , "Bank width":"512 bits"
+                  , "Bank depth":"1 word"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"memsys"
+              , "id":92
+              , "name":"local_mem_b"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"matrix-multi-st-v3.cpp"
+                    , "line":84
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":93
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":109
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":125
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":94
+                  , "name":"Bank 1"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":110
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":126
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":95
+                  , "name":"Bank 2"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":111
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":127
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":96
+                  , "name":"Bank 3"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":112
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":128
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":97
+                  , "name":"Bank 4"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":113
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":129
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":98
+                  , "name":"Bank 5"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":114
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":130
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":99
+                  , "name":"Bank 6"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":115
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":131
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":100
+                  , "name":"Bank 7"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":116
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":132
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":101
+                  , "name":"Bank 8"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":117
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":133
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":102
+                  , "name":"Bank 9"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":118
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":134
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":103
+                  , "name":"Bank 10"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":119
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":135
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":104
+                  , "name":"Bank 11"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":120
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":136
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":105
+                  , "name":"Bank 12"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":121
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":137
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":106
+                  , "name":"Bank 13"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":122
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":138
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":107
+                  , "name":"Bank 14"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":123
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":139
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":108
+                  , "name":"Bank 15"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":124
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":140
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n1 read ports/bank\n1 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"1"
+                      , "Number of write ports per bank":"1"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"1024 bytes"
+                  , "Implemented size":"1024 bytes"
+                  , "Number of banks":"16"
+                  , "Bank width":"512 bits"
+                  , "Bank depth":"1 word"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"memsys"
+              , "id":141
+              , "name":"local_mem_d"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"matrix-multi-st-v3.cpp"
+                    , "line":85
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":142
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":158
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":174
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":190
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":206
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":143
+                  , "name":"Bank 1"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":159
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":175
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":191
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":207
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":144
+                  , "name":"Bank 2"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":160
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":176
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":192
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":208
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":145
+                  , "name":"Bank 3"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":161
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":177
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":193
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":209
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":146
+                  , "name":"Bank 4"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":162
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":178
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":194
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":210
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":147
+                  , "name":"Bank 5"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":163
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":179
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":195
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":211
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":148
+                  , "name":"Bank 6"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":164
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":180
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":196
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":212
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":149
+                  , "name":"Bank 7"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":165
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":181
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":197
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":213
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":150
+                  , "name":"Bank 8"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":166
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":182
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":198
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":214
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":151
+                  , "name":"Bank 9"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":167
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":183
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":199
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":215
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":152
+                  , "name":"Bank 10"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":168
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":184
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":200
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":216
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":153
+                  , "name":"Bank 11"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":169
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":185
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":201
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":217
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":154
+                  , "name":"Bank 12"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":170
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":186
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":202
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":218
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":155
+                  , "name":"Bank 13"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":171
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":187
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":203
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":219
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":156
+                  , "name":"Bank 14"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":172
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":188
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":204
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":220
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":157
+                  , "name":"Bank 15"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"matrix-multi-st-v3.cpp"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":173
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":189
+                      , "name":"R"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":205
+                      , "name":"W"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":221
+                      , "name":"W"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"4 total ports/bank\n2 read ports/bank\n2 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"4"
+                      , "Number of read ports per bank":"2"
+                      , "Number of write ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"1024 bytes"
+                  , "Implemented size":"1024 bytes"
+                  , "Number of banks":"16"
+                  , "Bank width":"512 bits"
+                  , "Bank depth":"1 word"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"1"
+                  , "Additional Information":"Running memory at 2x clock to support more concurrent ports"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/2021.2/inteloneapi/compiler/2021.2.0/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":60
+      , "to":28
+    }
+    , {
+      "from":61
+      , "to":28
+    }
+    , {
+      "from":62
+      , "to":28
+    }
+    , {
+      "from":63
+      , "to":28
+    }
+    , {
+      "from":64
+      , "to":28
+    }
+    , {
+      "from":65
+      , "to":28
+    }
+    , {
+      "from":66
+      , "to":28
+    }
+    , {
+      "from":67
+      , "to":28
+    }
+    , {
+      "from":68
+      , "to":28
+    }
+    , {
+      "from":69
+      , "to":28
+    }
+    , {
+      "from":70
+      , "to":28
+    }
+    , {
+      "from":71
+      , "to":28
+    }
+    , {
+      "from":72
+      , "to":28
+    }
+    , {
+      "from":73
+      , "to":28
+    }
+    , {
+      "from":74
+      , "to":28
+    }
+    , {
+      "from":75
+      , "to":28
+    }
+    , {
+      "from":25
+      , "to":76
+    }
+    , {
+      "from":25
+      , "to":77
+    }
+    , {
+      "from":25
+      , "to":78
+    }
+    , {
+      "from":25
+      , "to":79
+    }
+    , {
+      "from":25
+      , "to":80
+    }
+    , {
+      "from":25
+      , "to":81
+    }
+    , {
+      "from":25
+      , "to":82
+    }
+    , {
+      "from":25
+      , "to":83
+    }
+    , {
+      "from":25
+      , "to":84
+    }
+    , {
+      "from":25
+      , "to":85
+    }
+    , {
+      "from":25
+      , "to":86
+    }
+    , {
+      "from":25
+      , "to":87
+    }
+    , {
+      "from":25
+      , "to":88
+    }
+    , {
+      "from":25
+      , "to":89
+    }
+    , {
+      "from":25
+      , "to":90
+    }
+    , {
+      "from":25
+      , "to":91
+    }
+    , {
+      "from":109
+      , "to":29
+    }
+    , {
+      "from":110
+      , "to":29
+    }
+    , {
+      "from":111
+      , "to":29
+    }
+    , {
+      "from":112
+      , "to":29
+    }
+    , {
+      "from":113
+      , "to":29
+    }
+    , {
+      "from":114
+      , "to":29
+    }
+    , {
+      "from":115
+      , "to":29
+    }
+    , {
+      "from":116
+      , "to":29
+    }
+    , {
+      "from":117
+      , "to":29
+    }
+    , {
+      "from":118
+      , "to":29
+    }
+    , {
+      "from":119
+      , "to":29
+    }
+    , {
+      "from":120
+      , "to":29
+    }
+    , {
+      "from":121
+      , "to":29
+    }
+    , {
+      "from":122
+      , "to":29
+    }
+    , {
+      "from":123
+      , "to":29
+    }
+    , {
+      "from":124
+      , "to":29
+    }
+    , {
+      "from":26
+      , "to":125
+    }
+    , {
+      "from":26
+      , "to":126
+    }
+    , {
+      "from":26
+      , "to":127
+    }
+    , {
+      "from":26
+      , "to":128
+    }
+    , {
+      "from":26
+      , "to":129
+    }
+    , {
+      "from":26
+      , "to":130
+    }
+    , {
+      "from":26
+      , "to":131
+    }
+    , {
+      "from":26
+      , "to":132
+    }
+    , {
+      "from":26
+      , "to":133
+    }
+    , {
+      "from":26
+      , "to":134
+    }
+    , {
+      "from":26
+      , "to":135
+    }
+    , {
+      "from":26
+      , "to":136
+    }
+    , {
+      "from":26
+      , "to":137
+    }
+    , {
+      "from":26
+      , "to":138
+    }
+    , {
+      "from":26
+      , "to":139
+    }
+    , {
+      "from":26
+      , "to":140
+    }
+    , {
+      "from":158
+      , "to":30
+    }
+    , {
+      "from":159
+      , "to":30
+    }
+    , {
+      "from":160
+      , "to":30
+    }
+    , {
+      "from":161
+      , "to":30
+    }
+    , {
+      "from":162
+      , "to":30
+    }
+    , {
+      "from":163
+      , "to":30
+    }
+    , {
+      "from":164
+      , "to":30
+    }
+    , {
+      "from":165
+      , "to":30
+    }
+    , {
+      "from":166
+      , "to":30
+    }
+    , {
+      "from":167
+      , "to":30
+    }
+    , {
+      "from":168
+      , "to":30
+    }
+    , {
+      "from":169
+      , "to":30
+    }
+    , {
+      "from":170
+      , "to":30
+    }
+    , {
+      "from":171
+      , "to":30
+    }
+    , {
+      "from":172
+      , "to":30
+    }
+    , {
+      "from":173
+      , "to":30
+    }
+    , {
+      "from":174
+      , "to":32
+    }
+    , {
+      "from":175
+      , "to":32
+    }
+    , {
+      "from":176
+      , "to":32
+    }
+    , {
+      "from":177
+      , "to":32
+    }
+    , {
+      "from":178
+      , "to":32
+    }
+    , {
+      "from":179
+      , "to":32
+    }
+    , {
+      "from":180
+      , "to":32
+    }
+    , {
+      "from":181
+      , "to":32
+    }
+    , {
+      "from":182
+      , "to":32
+    }
+    , {
+      "from":183
+      , "to":32
+    }
+    , {
+      "from":184
+      , "to":32
+    }
+    , {
+      "from":185
+      , "to":32
+    }
+    , {
+      "from":186
+      , "to":32
+    }
+    , {
+      "from":187
+      , "to":32
+    }
+    , {
+      "from":188
+      , "to":32
+    }
+    , {
+      "from":189
+      , "to":32
+    }
+    , {
+      "from":27
+      , "to":190
+    }
+    , {
+      "from":27
+      , "to":191
+    }
+    , {
+      "from":27
+      , "to":192
+    }
+    , {
+      "from":27
+      , "to":193
+    }
+    , {
+      "from":27
+      , "to":194
+    }
+    , {
+      "from":27
+      , "to":195
+    }
+    , {
+      "from":27
+      , "to":196
+    }
+    , {
+      "from":27
+      , "to":197
+    }
+    , {
+      "from":27
+      , "to":198
+    }
+    , {
+      "from":27
+      , "to":199
+    }
+    , {
+      "from":27
+      , "to":200
+    }
+    , {
+      "from":27
+      , "to":201
+    }
+    , {
+      "from":27
+      , "to":202
+    }
+    , {
+      "from":27
+      , "to":203
+    }
+    , {
+      "from":27
+      , "to":204
+    }
+    , {
+      "from":27
+      , "to":205
+    }
+    , {
+      "from":31
+      , "to":206
+    }
+    , {
+      "from":31
+      , "to":207
+    }
+    , {
+      "from":31
+      , "to":208
+    }
+    , {
+      "from":31
+      , "to":209
+    }
+    , {
+      "from":31
+      , "to":210
+    }
+    , {
+      "from":31
+      , "to":211
+    }
+    , {
+      "from":31
+      , "to":212
+    }
+    , {
+      "from":31
+      , "to":213
+    }
+    , {
+      "from":31
+      , "to":214
+    }
+    , {
+      "from":31
+      , "to":215
+    }
+    , {
+      "from":31
+      , "to":216
+    }
+    , {
+      "from":31
+      , "to":217
+    }
+    , {
+      "from":31
+      , "to":218
+    }
+    , {
+      "from":31
+      , "to":219
+    }
+    , {
+      "from":31
+      , "to":220
+    }
+    , {
+      "from":31
+      , "to":221
+    }
+  ]
+}

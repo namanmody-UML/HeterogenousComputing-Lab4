@@ -1,0 +1,77 @@
+
+########################################################################
+#      Date:           Sun Jul 25 23:41:32 PDT 2021
+#    Job ID:           934179.v-qsvr-1.aidevcloud
+#      User:           u75983
+# Resources:           neednodes=s001-n082:ppn=2,nodes=s001-n082:ppn=2,walltime=24:00:00
+########################################################################
+
+s001-n082
+sourcing /opt/intel/inteloneapi/setvars.sh
+:: WARNING: setvars.sh has already been run. Skipping re-execution.
+   To force a re-execution of setvars.sh, use the '--force' option.
+   Using '--force' can result in excessive use of your environment variables.
+[setupvars.sh] OpenVINO environment initialized
+
+Building for FPGA profiling:
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is Clang 13.0.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /glob/development-tools/versions/oneapi/2021.3/inteloneapi/compiler/2021.3.0/linux/bin/dpcpp
+-- Check for working CXX compiler: /glob/development-tools/versions/oneapi/2021.3/inteloneapi/compiler/2021.3.0/linux/bin/dpcpp -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 	FPGA_BOARD was not specified. Configuring the design to run on the Intel(R) Programmable Acceleration Card (PAC) with Intel Arria(R) 10 GX FPGA. Please refer to the README for information on board selection.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/u75983/dpcpp-tutorial/matrix-multi/newbuild_A10_profile
+Scanning dependencies of target matrix-multi-st-v2.fpga_profile
+[ 10%] Building CXX object src/CMakeFiles/matrix-multi-st-v2.fpga_profile.dir/matrix-multi-st-v2.cpp.o
+[ 20%] Linking CXX executable ../matrix-multi-st-v2.fpga_profile
+aoc: Compiling for FPGA. This process may take several hours to complete.  Prior to performing this compile, be sure to check the reports to ensure the design will meet your performance targets.  If the reports indicate performance targets are not being met, code edits may be required.  Please refer to the oneAPI FPGA Optimization Guide for information on performance tuning applications for FPGAs.
+[ 20%] Built target matrix-multi-st-v2.fpga_profile
+Scanning dependencies of target matrix-multi-st-v2.fpga_profile.target
+[ 20%] Built target matrix-multi-st-v2.fpga_profile.target
+Scanning dependencies of target matrix-multi-st-v3.fpga_profile
+[ 30%] Building CXX object src/CMakeFiles/matrix-multi-st-v3.fpga_profile.dir/matrix-multi-st-v3.cpp.o
+[ 40%] Linking CXX executable ../matrix-multi-st-v3.fpga_profile
+aoc: Compiling for FPGA. This process may take several hours to complete.  Prior to performing this compile, be sure to check the reports to ensure the design will meet your performance targets.  If the reports indicate performance targets are not being met, code edits may be required.  Please refer to the oneAPI FPGA Optimization Guide for information on performance tuning applications for FPGAs.
+[ 40%] Built target matrix-multi-st-v3.fpga_profile
+Scanning dependencies of target matrix-multi-st-v3.fpga_profile.target
+[ 40%] Built target matrix-multi-st-v3.fpga_profile.target
+Scanning dependencies of target matrix-multi-para-v2.fpga_profile
+[ 50%] Building CXX object src/CMakeFiles/matrix-multi-para-v2.fpga_profile.dir/matrix-multi-para-v2.cpp.o
+[ 60%] Linking CXX executable ../matrix-multi-para-v2.fpga_profile
+aoc: Compiling for FPGA. This process may take several hours to complete.  Prior to performing this compile, be sure to check the reports to ensure the design will meet your performance targets.  If the reports indicate performance targets are not being met, code edits may be required.  Please refer to the oneAPI FPGA Optimization Guide for information on performance tuning applications for FPGAs.
+[ 60%] Built target matrix-multi-para-v2.fpga_profile
+Scanning dependencies of target matrix-multi-para-v2.fpga_profile.target
+[ 60%] Built target matrix-multi-para-v2.fpga_profile.target
+Scanning dependencies of target matrix-multi-para-v1.fpga_profile
+[ 70%] Building CXX object src/CMakeFiles/matrix-multi-para-v1.fpga_profile.dir/matrix-multi-para-v1.cpp.o
+[ 80%] Linking CXX executable ../matrix-multi-para-v1.fpga_profile
+aoc: Compiling for FPGA. This process may take several hours to complete.  Prior to performing this compile, be sure to check the reports to ensure the design will meet your performance targets.  If the reports indicate performance targets are not being met, code edits may be required.  Please refer to the oneAPI FPGA Optimization Guide for information on performance tuning applications for FPGAs.
+[ 80%] Built target matrix-multi-para-v1.fpga_profile
+Scanning dependencies of target matrix-multi-para-v1.fpga_profile.target
+[ 80%] Built target matrix-multi-para-v1.fpga_profile.target
+Scanning dependencies of target matrix-multi-st-v1.fpga_profile
+[ 90%] Building CXX object src/CMakeFiles/matrix-multi-st-v1.fpga_profile.dir/matrix-multi-st-v1.cpp.o
+[100%] Linking CXX executable ../matrix-multi-st-v1.fpga_profile
+aoc: Compiling for FPGA. This process may take several hours to complete.  Prior to performing this compile, be sure to check the reports to ensure the design will meet your performance targets.  If the reports indicate performance targets are not being met, code edits may be required.  Please refer to the oneAPI FPGA Optimization Guide for information on performance tuning applications for FPGAs.
+[100%] Built target matrix-multi-st-v1.fpga_profile
+Scanning dependencies of target matrix-multi-st-v1.fpga_profile.target
+[100%] Built target matrix-multi-st-v1.fpga_profile.target
+Scanning dependencies of target profile
+[100%] Built target profile
+
+########################################################################
+# End of output for job 934179.v-qsvr-1.aidevcloud
+# Date: Mon Jul 26 06:36:35 PDT 2021
+########################################################################
+

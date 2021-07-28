@@ -1,0 +1,23 @@
+
+########################################################################
+#      Date:           Sun Jul 25 22:13:02 PDT 2021
+#    Job ID:           934135.v-qsvr-1.aidevcloud
+#      User:           u75983
+# Resources:           neednodes=s001-n081:ppn=2,nodes=s001-n081:ppn=2,walltime=24:00:00
+########################################################################
+
+s001-n081
+sourcing /opt/intel/inteloneapi/setvars.sh
+:: WARNING: setvars.sh has already been run. Skipping re-execution.
+   To force a re-execution of setvars.sh, use the '--force' option.
+   Using '--force' can result in excessive use of your environment variables.
+[setupvars.sh] OpenVINO environment initialized
+
+Building for FPGA profiling:
+failed
+
+########################################################################
+# End of output for job 934135.v-qsvr-1.aidevcloud
+# Date: Sun Jul 25 22:13:08 PDT 2021
+########################################################################
+

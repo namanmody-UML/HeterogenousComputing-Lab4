@@ -1,0 +1,608 @@
+{
+  "name":"loop_attributes"
+  , "id":4294967295
+  , "nodes":
+  [
+    {
+      "name":"MMstv3"
+      , "id":3588807984
+      , "clk":"No"
+      , "fmax":"240.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"MMstv3.B0"
+          , "id":3587067424
+          , "af":"240.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"MMstv3.B1"
+          , "id":3587067776
+          , "af":"240.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"6.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: n/a"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                , "line":87
+              }
+            ]
+          ]
+          , "type":"loop"
+          , "children":
+          [
+            {
+              "name":"MMstv3.B2"
+              , "id":3587693792
+              , "af":"240.00"
+              , "br":"0"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lt":"6.000000"
+              , "mi":"1"
+              , "pl":"Yes"
+              , "tc":"0"
+              , "tn":"0"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: n/a"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                    , "line":94
+                  }
+                ]
+              ]
+              , "type":"loop"
+              , "children":
+              [
+                {
+                  "name":"MMstv3.B4"
+                  , "id":3587693952
+                  , "af":"240.00"
+                  , "br":"0"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"1"
+                  , "ll":"3"
+                  , "lt":"16.000000"
+                  , "mi":"1"
+                  , "pl":"Yes"
+                  , "tc":"0"
+                  , "tn":"0"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: n/a"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                        , "line":98
+                      }
+                    ]
+                  ]
+                  , "type":"loop"
+                  , "children":
+                  [
+                    {
+                      "name":"MMstv3.B5"
+                      , "id":3587694032
+                      , "af":"240.00"
+                      , "br":"1"
+                      , "ci":"0"
+                      , "fo":"Disabled"
+                      , "ii":"1"
+                      , "ll":"4"
+                      , "lt":"247.000000"
+                      , "mi":"1"
+                      , "pl":"Yes"
+                      , "tc":"16"
+                      , "tn":"1"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Hyper-Optimized loop structure: n/a"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                            , "line":99
+                          }
+                        ]
+                      ]
+                      , "type":"loop"
+                    }
+                  ]
+                }
+                , {
+                  "name":"MMstv3.B6"
+                  , "id":3587694112
+                  , "af":"240.00"
+                  , "br":"1"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"1"
+                  , "ll":"3"
+                  , "lt":"0.000000"
+                  , "mi":"n/a"
+                  , "pl":"Yes"
+                  , "tc":"16"
+                  , "tn":"1"
+                  , "type":"bb"
+                }
+                , {
+                  "name":"MMstv3.B7"
+                  , "id":3587694192
+                  , "af":"240.00"
+                  , "br":"0"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"1"
+                  , "ll":"3"
+                  , "lt":"0.000000"
+                  , "mi":"n/a"
+                  , "pl":"Yes"
+                  , "tc":"0"
+                  , "tn":"1"
+                  , "type":"bb"
+                }
+                , {
+                  "name":"MMstv3.B8"
+                  , "id":3587694272
+                  , "af":"240.00"
+                  , "br":"0"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"1"
+                  , "ll":"3"
+                  , "lt":"5.000000"
+                  , "mi":"1"
+                  , "pl":"Yes"
+                  , "tc":"0"
+                  , "tn":"0"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: n/a"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                        , "line":106
+                      }
+                    ]
+                  ]
+                  , "type":"loop"
+                  , "children":
+                  [
+                    {
+                      "name":"MMstv3.B9"
+                      , "id":3587694352
+                      , "af":"240.00"
+                      , "br":"0"
+                      , "ci":"0"
+                      , "fo":"Disabled"
+                      , "ii":"1"
+                      , "ll":"4"
+                      , "lt":"5.000000"
+                      , "mi":"1"
+                      , "pl":"Yes"
+                      , "tc":"0"
+                      , "tn":"0"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Hyper-Optimized loop structure: n/a"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                            , "line":107
+                          }
+                        ]
+                      ]
+                      , "type":"loop"
+                      , "children":
+                      [
+                        {
+                          "name":"MMstv3.B10"
+                          , "id":3587694432
+                          , "af":"240.00"
+                          , "br":"1"
+                          , "ci":"0"
+                          , "fo":"Disabled"
+                          , "ii":"1"
+                          , "ll":"5"
+                          , "lt":"14.000000"
+                          , "mi":"1"
+                          , "pl":"Yes"
+                          , "tc":"16"
+                          , "tn":"1"
+                          , "details":
+                          [
+                            {
+                              "type":"text"
+                              , "text":"Hyper-Optimized loop structure: n/a"
+                            }
+                          ]
+                          , "debug":
+                          [
+                            [
+                              {
+                                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                                , "line":110
+                              }
+                            ]
+                          ]
+                          , "type":"loop"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"MMstv3.B11"
+                      , "id":3587694512
+                      , "af":"240.00"
+                      , "br":"1"
+                      , "ci":"0"
+                      , "fo":"Disabled"
+                      , "ii":"1"
+                      , "ll":"4"
+                      , "lt":"13.000000"
+                      , "mi":"n/a"
+                      , "pl":"Yes"
+                      , "tc":"16"
+                      , "tn":"1"
+                      , "type":"bb"
+                    }
+                  ]
+                }
+                , {
+                  "name":"MMstv3.B12"
+                  , "id":3587694592
+                  , "af":"240.00"
+                  , "br":"1"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"1"
+                  , "ll":"3"
+                  , "lt":"0.000000"
+                  , "mi":"n/a"
+                  , "pl":"Yes"
+                  , "tc":"16"
+                  , "tn":"1"
+                  , "type":"bb"
+                }
+                , {
+                  "name":"MMstv3.B13"
+                  , "id":3587694672
+                  , "af":"240.00"
+                  , "br":"0"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"1"
+                  , "ll":"3"
+                  , "lt":"1.000000"
+                  , "mi":"n/a"
+                  , "pl":"Yes"
+                  , "tc":"0"
+                  , "tn":"1"
+                  , "type":"bb"
+                }
+                , {
+                  "name":"MMstv3.B14"
+                  , "id":3587694752
+                  , "af":"240.00"
+                  , "br":"0"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"1"
+                  , "ll":"3"
+                  , "lt":"11.000000"
+                  , "mi":"1"
+                  , "pl":"Yes"
+                  , "tc":"0"
+                  , "tn":"0"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: n/a"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                        , "line":121
+                      }
+                    ]
+                  ]
+                  , "type":"loop"
+                  , "children":
+                  [
+                    {
+                      "name":"MMstv3.B15"
+                      , "id":3587694832
+                      , "af":"240.00"
+                      , "br":"1"
+                      , "ci":"0"
+                      , "fo":"Disabled"
+                      , "ii":"1"
+                      , "ll":"4"
+                      , "lt":"85.000000"
+                      , "mi":"1"
+                      , "pl":"Yes"
+                      , "tc":"16"
+                      , "tn":"1"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Hyper-Optimized loop structure: n/a"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                            , "line":122
+                          }
+                        ]
+                      ]
+                      , "type":"loop"
+                    }
+                  ]
+                }
+                , {
+                  "name":"MMstv3.B16"
+                  , "id":3587694912
+                  , "af":"240.00"
+                  , "br":"1"
+                  , "ci":"0"
+                  , "fo":"Disabled"
+                  , "ii":"1"
+                  , "ll":"3"
+                  , "lt":"0.000000"
+                  , "mi":"n/a"
+                  , "pl":"Yes"
+                  , "tc":"16"
+                  , "tn":"1"
+                  , "type":"bb"
+                }
+              ]
+            }
+            , {
+              "name":"MMstv3.B17"
+              , "id":3587694992
+              , "af":"240.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lt":"1.000000"
+              , "mi":"n/a"
+              , "pl":"Yes"
+              , "tc":"200"
+              , "tn":"1"
+              , "type":"bb"
+            }
+          ]
+        }
+        , {
+          "name":"MMstv3.B3"
+          , "id":3587693872
+          , "af":"240.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"5000"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"MMstv3.B18"
+          , "id":3587695072
+          , "af":"240.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"MMstv3_cplusd"
+      , "id":3683536416
+      , "clk":"No"
+      , "fmax":"240.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"MMstv3_cplusd.B0"
+          , "id":3587695152
+          , "af":"240.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"MMstv3_cplusd.B1"
+          , "id":3588583488
+          , "af":"240.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: n/a"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                , "line":154
+              }
+            ]
+          ]
+          , "type":"loop"
+          , "children":
+          [
+            {
+              "name":"MMstv3_cplusd.B2"
+              , "id":3588584128
+              , "af":"240.00"
+              , "br":"1"
+              , "ci":"0"
+              , "fo":"Disabled"
+              , "ii":"1"
+              , "ll":"2"
+              , "lt":"294.000000"
+              , "mi":"1"
+              , "pl":"Yes"
+              , "tc":"3200"
+              , "tn":"0"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: n/a"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u75983/dpcpp-tutorial/matrix-multi/build/src/matrix-multi-st-v3.cpp"
+                    , "line":155
+                  }
+                ]
+              ]
+              , "type":"loop"
+            }
+          ]
+        }
+        , {
+          "name":"MMstv3_cplusd.B3"
+          , "id":3588584208
+          , "af":"240.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"800"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"MMstv3_cplusd.B4"
+          , "id":3588584288
+          , "af":"240.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+}
